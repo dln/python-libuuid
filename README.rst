@@ -2,15 +2,10 @@
   python-libuuid - Faster UUID generation using libuuid
 #########################################################
 
-Introduction
-------------
-
-Python C extension for faster generation of `UUID objects`_.
-It supports libuuid-based generation of version 1 and 4 UUIDs.
-
-The library is fully compatible with the `standard uuid module`_, while
-also providing specialized, optimized, functions for generating `UUID`_
-strings.
+A Python C extension for faster generation of `UUID`_ objects. It supports
+libuuid-based generation of version 1 and 4 UUIDs. The library is fully
+compatible with the `standard uuid module`_, while also providing specialized,
+optimized, functions for generating `UUID`_ strings.
 
 ``python-libuuid`` is roughly 8-10 times faster than the pure-python version.
 
@@ -21,11 +16,8 @@ It's basically just a thin `Cython`_ wrapper around `libuuid by Theo Tso`_.
 .. _libuuid by Theo Tso: http://git.kernel.org/?p=fs/ext2/e2fsprogs.git;a=tree;f=lib/uuid
 .. _cython: http://cython.org/
 
-Documentation
--------------
-
 Installation
-============
+------------
 
 You can install ``python-libuuid`` either via the Python Package Index (PyPI)
 or from source.
@@ -47,7 +39,7 @@ following,::
 
 
 Usage / Examples
-================
+----------------
 
 The ``libuuid`` module provides a similar interface to ``uuid``, resulting in fully
 compatible UUID objects. ``libuuid.UUID`` is also a subclass of ``uuid.UUID``,
@@ -73,7 +65,7 @@ the common interface.
 
 
 Gotchas
-=======
+-------
 
  * ``libuuid`` only provides random (version 4) and time based (version 1) UUIDs.
 
@@ -85,20 +77,24 @@ Gotchas
 
 
 Bug tracker
-==========
+-----------
 
-If you have any suggestions, bug reports or annoyances please report them
-to our issue tracker at http://github.com/dln/python-libuuid/issues/
+If you have any suggestions, bug reports or annoyances please report using
+the Github `issue tracker`_
+
+.. _issue tracker: http://github.com/dln/python-libuuid/issues/
+
 
 Contributing
-============
+------------
 
-Development of ``python-libuuid`` takes place at Github: http://github.com/dln/python-libuuid/
+Development takes place at Github: http://github.com/dln/python-libuuid/
 
-Patches are more than welcome.
+Patches and contributions are more than welcome.
+
 
 License
-=======
+-------
 
 This software is licensed under the ``BSD`` software license.
 See the ``LICENSE`` file in the top distribution directory for full license
