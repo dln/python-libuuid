@@ -1,0 +1,9 @@
+*.pyc
+*~
+_build
+build
+.*.sw[po]
+dist/
+*.egg-info
+.nfs*
+
