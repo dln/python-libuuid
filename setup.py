@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""Python bindings to libuuid."""
+"""C Extension for faster UUID generation using libuuid."""
 
 __version_info__ = (0, 9, 0)
 __version__ = ".".join(map(str, __version_info__))
@@ -48,13 +48,14 @@ ext_modules = [
     ]
 
 
-long_description = codecs.open('README.rst', "r", "utf-8").read()
+long_description = '\n' + codecs.open('README.rst', "r", "utf-8").read()
 
 setup(name = 'python-libuuid',
       version = __version__,
       description = __doc__,
       author = __author__,
       author_email = __contact__,
+      license = 'BSD',
       url = __homepage__,
       packages = ['libuuid'],
       ext_modules = ext_modules,
@@ -63,7 +64,8 @@ setup(name = 'python-libuuid',
       classifiers=[
                    "Development Status :: 4 - Beta",
                    "Programming Language :: Python",
-                   "License :: OSI Approved :: Apache Software License",
+                   "Programming Language :: Cython",
+                   "License :: OSI Approved :: BSD License",
                    "Intended Audience :: Developers",
                    "Topic :: Communications",
                    "Topic :: System :: Distributed Computing",
