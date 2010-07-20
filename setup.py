@@ -6,13 +6,12 @@ __version_info__ = (0, 9, 0)
 __version__ = ".".join(map(str, __version_info__))
 __author__ = "Daniel Lundin"
 __contact__ = "dln@eintr.org"
-__homepage__ = "http://github.com/dln/pylibuuid/"
+__homepage__ = "http://github.com/dln/python-libuuid/"
 __docformat__ = "restructuredtext"
 
 import codecs
 import os
 from glob import glob
-
 
 try:
     import setuptools
