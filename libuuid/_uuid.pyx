@@ -1,5 +1,4 @@
 # cython: embedsignature=True
-from binascii import hexlify
 import uuid as uuid_std
 
 cimport uuid

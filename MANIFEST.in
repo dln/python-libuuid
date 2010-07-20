@@ -1,3 +1,4 @@
 include MANIFEST.in MANIFEST
 include AUTHORS LICENSE README.rst
 recursive-include libuuid *.py *.pyx *.pxd _uuid.c
+recursive-include tests *.py
