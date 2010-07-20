@@ -1,0 +1,10 @@
+AUTHORS
+MANIFEST
+MANIFEST.in
+README
+README.rst
+setup.py
+libuuid/__init__.py
+libuuid/_uuid.c
+libuuid/_uuid.pyx
+libuuid/uuid.pxd

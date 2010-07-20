@@ -1,0 +1,3 @@
+include MANIFEST.in MANIFEST
+include AUTHORS README.rst
+recursive-include libuuid *.py *.pyx *.pxd _uuid.c
